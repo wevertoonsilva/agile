@@ -18,4 +18,7 @@
     
     <!-- Quais pacotes que devem ser varridos -->
     <context:component-scan base-package="com.intercasa.agile.controller" />
+    
+    <!-- Anotação para trabalhar com conteúdo estático -->
+    <mvc:resources mapping="/resources/**" location="/resources/" cache-period="120" />
 </beans>
