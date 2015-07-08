@@ -9,6 +9,14 @@
         </session-timeout>
     </session-config>
     
+    <!-- Ativação da Expression Language por padrão -->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>/**</url-pattern>
+            <el-ignored>false</el-ignored>
+        </jsp-property-group>
+    </jsp-config>
+    
     <!-- Configuração do Dispatcher Servlet do Spring MVC -->
     <servlet>
         <servlet-name>DispatcherServlet</servlet-name>
