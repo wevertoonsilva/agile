@@ -10,4 +10,12 @@
             http://www.springframework.org/schema/mvc
             http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd">
 
+    <!-- Instrui o Servlet Dispatcher a buscar seus controladores a partir de anotações -->
+    <mvc:annotation-driven />
+    
+    <!-- Instrui o container de que este buscará a definição de nossos beans a partir de anotações -->
+    <context:annotation-config />
+    
+    <!-- Quais pacotes que devem ser varridos -->
+    <context:component-scan base-package="com.intercasa.agile.controller" />
 </beans>
